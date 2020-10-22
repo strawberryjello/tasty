@@ -1,0 +1,3 @@
+project=tasty
+test=rspec
+template=erb

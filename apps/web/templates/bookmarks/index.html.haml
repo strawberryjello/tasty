@@ -1,0 +1,14 @@
+%a{:href => routes.new_bookmark_path} New bookmark
+
+%h2 All bookmarks
+
+- if bookmarks.any?
+  #bookmarks
+    - bookmarks.each do |bookmark|
+      .bookmark
+        %h3
+          %a{:href => bookmark.url}= bookmark.title
+        %a{:href => routes.edit_bookmark_path(bookmark.id)} Edit
+
+- else
+  %p.placeholder There are no bookmarks yet.

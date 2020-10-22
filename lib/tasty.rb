@@ -1,0 +1,2 @@
+module Tasty
+end
